@@ -1,0 +1,35 @@
+.mbsc-calendar-wrapper {
+    position: fixed !important;
+    top: 0!important;
+    z-index: 1024 !important;
+}
+.mbsc-timeline.mbsc-flex-1-1.mbsc-flex-col.mbsc-ios.mbsc-rtl {
+    top: 3rem !important;
+}
+mbsc-eventcalendar {
+    height: 95vh !important;
+}
+.mbsc-timeline-resource-bg.mbsc-flex-1-1.mbsc-flex-col.mbsc-ios {
+    background: #1a73e8;
+    color: white;
+    text-align: center;
+}
+
+.mbsc-timeline-header-time-cont.mbsc-flex-1-1 {
+    position: fixed;
+    background: antiquewhite;
+    margin-right: 7rem !important;
+    /* transform: translateX(600px) !important; */
+}
+.mbsc-ios.mbsc-calendar-button.mbsc-button {
+    color: #ffffff !important;
+}
+.mbsc-ios.mbsc-eventcalendar .mbsc-calendar-header, .mbsc-ios.mbsc-eventcalendar .mbsc-calendar-week-days {
+    background: #1a73e8 !important;
+}
+.mbsc-timeline-resources.mbsc-timeline-resource-col.mbsc-flex-col.mbsc-ios.mbsc-rtl {
+    width: 7rem !important;
+}
+.mbsc-timeline-resource-col {
+    width: 7rem !important;
+}
