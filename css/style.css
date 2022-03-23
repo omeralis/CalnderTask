@@ -1,6 +1,11 @@
+.mbsc-calendar-wrapper {
+    position: fixed !important;
+    top: 0rem!important;
+    z-index: 1024 !important;
+}
 
 .mbsc-timeline.mbsc-flex-1-1.mbsc-flex-col.mbsc-ios.mbsc-rtl {
-    top: 3rem !important;
+    top: 5rem !important;
 }
 .mbsc-eventcalendar {
     height: 95vh !important;
@@ -9,12 +14,16 @@
     background: #1a73e8;
     color: white;
     text-align: center;
+    margin-top: 3rem;
 }
-
+.mbsc-timeline-grid.mbsc-flex-col.mbsc-flex-1-1 {
+    margin-top: 3rem;
+}
 .mbsc-timeline-header-time-cont.mbsc-flex-1-1 {
     position: fixed;
     background: antiquewhite;
     margin-left: 7rem !important;
+    margin-top: 3rem;
 }
 .mbsc-ios.mbsc-calendar-button.mbsc-button {
     color: #ffffff !important;
