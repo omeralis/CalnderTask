@@ -1,12 +1,8 @@
-.mbsc-calendar-wrapper {
-    position: fixed !important;
-    top: 0!important;
-    z-index: 1024 !important;
-}
+
 .mbsc-timeline.mbsc-flex-1-1.mbsc-flex-col.mbsc-ios.mbsc-rtl {
     top: 3rem !important;
 }
-mbsc-eventcalendar {
+.mbsc-eventcalendar {
     height: 95vh !important;
 }
 .mbsc-timeline-resource-bg.mbsc-flex-1-1.mbsc-flex-col.mbsc-ios {
@@ -18,8 +14,7 @@ mbsc-eventcalendar {
 .mbsc-timeline-header-time-cont.mbsc-flex-1-1 {
     position: fixed;
     background: antiquewhite;
-    margin-right: 7rem !important;
-    /* transform: translateX(600px) !important; */
+    margin-left: 7rem !important;
 }
 .mbsc-ios.mbsc-calendar-button.mbsc-button {
     color: #ffffff !important;

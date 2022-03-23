@@ -4,20 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
-    <script>
-        // Ignore this in your implementation
-        window.isMbscDemo = true;
+    <script>  window.isMbscDemo = true;
     </script>
 
     <title>Monthly timeline</title>
 
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-
-    <!-- Mobiscroll JS and CSS Includes -->
-    <link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
+    <link rel="stylesheet" href="css/mobiscroll.javascript.min.css">
+    <script src="js/mobiscroll.javascript.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/mobiscroll.jquery.min.js"></script>
-
     <style type="text/css">
     body {
         margin: 0;
@@ -39,134 +33,135 @@
       <div id="demo-month-view"></div>
   </div>
 </div>
-
+<script>
+    
+</script>
 <script>
 
     mobiscroll.setOptions({
-        locale: mobiscroll.localeAr,  
+        locale: mobiscroll.localeEn,  
         theme: 'ios',                 
-            themeVariant: 'light'    
+        themeVariant: 'light'        
     });
     
-    $(function () {
-        $('#demo-month-view').mobiscroll().eventcalendar({
-            view: {                 
-                timeline: {
-                    type: 'month'
-                }
-            },
-            data: [{                
-                start: '2022-01-02T00:00',
-                end: '2022-01-05T00:00',
-                title: 'Event 1',
-                resource: 1
-            }, {
-                start: '2022-01-10T09:00',
-                end: '2022-01-15T15:00',
-                title: 'Event 2',
-                resource: 3
-            }, {
-                start: '2022-01-12T00:00',
-                end: '2022-01-14T00:00',
-                title: 'Event 3',
-                resource: 4
-            }, {
-                start: '2022-01-15T07:00',
-                end: '2022-01-20T12:00',
-                title: 'Event 4',
-                resource: 5
-            }, {
-                start: '2022-01-03T00:00',
-                end: '2022-01-10T00:00',
-                title: 'Event 5',
-                resource: 6
-            }, {
-                start: '2022-01-10T08:00',
-                end: '2022-01-11T20:00',
-                title: 'Event 6',
-                resource: 7
-            }, {
-                start: '2022-01-22T00:00',
-                end: '2022-01-28T00:00',
-                title: 'Event 7',
-                resource: 7
-            }, {
-                start: '2022-01-08T00:00',
-                end: '2022-01-13T00:00',
-                title: 'Event 8',
-                resource: 15
-            }, {
-                start: '2022-01-25T00:00',
-                end: '2022-01-27T00:00',
-                title: 'Event 9',
-                resource: 10
-            }, {
-                start: '2022-01-20T00:00',
-                end: '2022-01-23T00:00',
-                title: 'Event 10',
-                resource: 12
-            }],
-            resources: [{             
-                name: ' A',
-                color: '#e20000'
-            }, {
-                id: 2,
-                name: ' B',
-                color: '#76e083'
-            }, {
-                id: 3,
-                name: ' C',
-                color: '#4981d6'
-            }, {
-                id: 4,
-                name: ' D',
-                color: '#e25dd2'
-            }, {
-                id: 5,
-                name: ' E',
-                color: '#1dab2f'
-            }, {
-                id: 6,
-                name: ' F',
-                color: '#d6d145'
-            }, {
-                id: 7,
-                name: ' G',
-                color: '#34c8e0'
-            }, {
-                id: 8,
-                name: ' H',
-                color: '#9dde46'
-            }, {
-                id: 9,
-                name: ' I',
-                color: '#166f6f'
-            }, {
-                id: 10,
-                name: ' J',
-                color: '#f7961e'
-            }, {
-                id: 11,
-                name: ' K',
-                color: '#34c8e0'
-            }, {
-                id: 12,
-                name: ' L',
-                color: '#af0000'
-            }, {
-                id: 13,
-                name: ' M',
-                color: '#446f1c'
-            }, {
-                id: 14,
-                name: ' N',
-                color: '#073138'
-            }, {
-                id: 15,
-                name: ' O',
-                color: '#4caf00'
-            }]
-        });
+    mobiscroll.eventcalendar('#demo-month-view', {
+        view: {                     
+            timeline: {
+                type: 'month'
+            }
+        },
+        data: [{                
+            start: '2022-03-02T00:00',
+            end: '2022-03-05T00:00',
+            title: 'Event 1',
+            resource: 1
+        }, {
+            start: '2022-03-10T09:00',
+            end: '2022-03-15T15:00',
+            title: 'Event 2',
+            resource: 3
+        }, {
+            start: '2022-03-12T00:00',
+            end: '2022-03-14T00:00',
+            title: 'Event 3',
+            resource: 4
+        }, {
+            start: '2022-03-15T07:00',
+            end: '2022-03-20T12:00',
+            title: 'Event 4',
+            resource: 5
+        }, {
+            start: '2022-03-03T00:00',
+            end: '2022-03-10T00:00',
+            title: 'Event 5',
+            resource: 6
+        }, {
+            start: '2022-03-10T08:00',
+            end: '2022-03-11T20:00',
+            title: 'Event 6',
+            resource: 7
+        }, {
+            start: '2022-03-22T00:00',
+            end: '2022-03-28T00:00',
+            title: 'Event 7',
+            resource: 7
+        }, {
+            start: '2022-03-08T00:00',
+            end: '2022-03-13T00:00',
+            title: 'Event 8',
+            resource: 15
+        }, {
+            start: '2022-03-25T00:00',
+            end: '2022-03-27T00:00',
+            title: 'Event 9',
+            resource: 10
+        }, {
+            start: '2022-03-20T00:00',
+            end: '2022-03-23T00:00',
+            title: 'Event 10',
+            resource: 12
+        }],
+        resources: [{                
+            id: 1,
+            name: 'A',
+            color: '#e20000'
+        }, {
+            id: 2,
+            name: 'B',
+            color: '#76e083'
+        }, {
+            id: 3,
+            name: 'C',
+            color: '#4981d6'
+        }, {
+            id: 4,
+            name: 'D',
+            color: '#e25dd2'
+        }, {
+            id: 5,
+            name: 'E',
+            color: '#1dab2f'
+        }, {
+            id: 6,
+            name: 'F',
+            color: '#d6d145'
+        }, {
+            id: 7,
+            name: 'G',
+            color: '#34c8e0'
+        }, {
+            id: 8,
+            name: 'H',
+            color: '#9dde46'
+        }, {
+            id: 9,
+            name: 'I',
+            color: '#166f6f'
+        }, {
+            id: 10,
+            name: 'J',
+            color: '#f7961e'
+        }, {
+            id: 11,
+            name: 'K',
+            color: '#34c8e0'
+        }, {
+            id: 12,
+            name: 'L',
+            color: '#af0000'
+        }, {
+            id: 13,
+            name: 'M',
+            color: '#446f1c'
+        }, {
+            id: 14,
+            name: 'N',
+            color: '#073138'
+        }, {
+            id: 15,
+            name: 'O',
+            color: '#4caf00'
+        }]
     });
 </script>
 
